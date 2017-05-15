@@ -3,15 +3,16 @@
 
 class Book
 {
-	std::string author;
-	std::string title;
-	int publicationYear;
-	int ID;
+	std::string author{};
+	std::string title{};
+	int publicationYear{};
+	int ID{};
 
 public:
 	friend class Library;
 	Book();
 	~Book();
+	void getBook();
 };
 
 

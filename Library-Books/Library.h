@@ -10,7 +10,7 @@ private:
 	
 public:
 	void addBook2Lib(Book* book);
-	Book getBook(int);
+	Book getBook(Book* book);
 
 
 	Library();

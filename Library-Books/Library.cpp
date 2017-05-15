@@ -10,7 +10,7 @@ Library::Library()
 void Library::addBook2Lib(Book* book)
 {
 	
-	for (int i = 0; i < 5; i++)
+	for (int i = 0; i < 3; i++)
 	{
 		std::cout << "Book " << i + 1 << " ID: ";
 		std::cin >> book[i].ID;
@@ -24,15 +24,13 @@ void Library::addBook2Lib(Book* book)
 	}
 }
 
-Book Library::getBook(int bookId)
+Book Library::getBook(Book* book)
 {
+	int bookId = 0;
 	std::cout << "Please provide book ID: ";
 	std::cin >> bookId;
 
-
-
-
-	return Book();
+	return book[bookId];
 }
 
 

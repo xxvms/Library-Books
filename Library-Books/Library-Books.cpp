@@ -11,12 +11,19 @@
 int main()
 {
 	Library lib;
-	Book bk[5];
+	Book bk[3];
 	Book* bk1 = bk;
 
 	lib.addBook2Lib(bk1);
 
+
 	
+	bk[0].getBook();
+	bk[1].getBook();
+	bk[2].getBook();
+
+	
+	//lib.getBook(bk1);
 
 	system("pause");
     return 0;
