@@ -1,31 +1,23 @@
 // Library-Books.cpp : Defines the entry point for the console application.
 //
+// This is assigment for Arek class - creating a Library with books
+//
 
 #include <iostream>
 #include "Library.h"
 #include <string>
+#include "Book.h"
 
 int main()
 {
+	Library lib;
+	Book bk[5];
+	Book* bk1 = bk;
+
+	lib.addBook2Lib(bk1);
+
 	
-	Book book[5];
-	
-
-	book[0].addBook(book);
-	book[0].getBook(book);
-
-
 
 	system("pause");
     return 0;
 }
-
-//int main()
-//{
-//	Book book;
-//	addBook(&book);
-//	getBook(&book);
-//
-//	system("pause");
-//	return 0;
-//}

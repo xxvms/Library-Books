@@ -1,24 +1,20 @@
 #pragma once
 #include <string>
+#include "Book.h"
+
 class Library
 {
+private: 
+	//Book books[5];
+
 	
 public:
-	Library();
-	Book addBook2Lib(Book * book);
-	~Library();
-};
+	void addBook2Lib(Book* book);
+	Book getBook(int);
 
-class Book
-{
-private:
-	std::string author;
-	std::string title;
-	int publicationYear;
-public:
-	Book();
-	Book addBook(Book * book);
-	void getBook(Book * book);
+
+	Library();
+	~Library();
 };
 
 
